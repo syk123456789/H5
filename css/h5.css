@@ -1,0 +1,208 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#fullpage{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 1090243 */
+  src: url('//at.alicdn.com/t/font_1090243_eruvh1qb6h.eot');
+  src: url('//at.alicdn.com/t/font_1090243_eruvh1qb6h.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1090243_eruvh1qb6h.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1090243_eruvh1qb6h.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1090243_eruvh1qb6h.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1090243_eruvh1qb6h.svg#iconfont') format('svg');
+}
+.iconfont{
+	font-family: iconfont;
+}
+
+footer{
+	width: 150px;
+	height: 75px;
+	background: #efa193;
+	border-radius: 100%;
+	position: fixed;
+	bottom: -40px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.first_page{
+	background: url(../img/bg.jpg) no-repeat center;
+	overflow: hidden;
+}
+.wrap{
+	position: relative;
+	margin-top: 150px;
+}
+.circle{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: url(../img/head.png) no-repeat center;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -70px;
+	margin: auto;
+}
+.wrap .top{
+	font-size: 30px;
+	margin-bottom: 20px;
+	color: #FFFFFF;
+}
+.wrap .bottom{
+	font-size: 20px;
+	color: white;
+}
+.array{
+	width: 0;
+	height: 0;
+	border-bottom: 20px solid #f0f;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	position: fixed;
+	bottom: 5px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+/* 第二块 */
+.second_page{
+	background: linear-gradient(to top, #e65a3f, #e79251);
+	width: 100%;
+	height: 100%;
+	padding: 120px 40px;
+	box-sizing: border-box;
+}
+.second_page .floor{
+	display: flex;
+	justify-content: space-around;
+}
+.second_page .floor img{
+	width: 50px;
+	height: 50px;
+	
+}
+.second_page .floor .transi{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.second_page .callme .left{
+	text-align: left;
+	font-size: 25px;
+	color: #fff;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	display: none;
+}
+.second_page .callme .left2{
+	text-align: left;
+	font-size: 16px;
+	color: #fff;
+	display: none;
+	animate-delay: 3s;      
+}
+.third_page{
+	width: 100%;
+	height: 100%;
+	background:  linear-gradient(to top, #e65a3f, #e79251);;
+}
+.third_page img{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto auto;
+}
+.forth_page{
+	padding: 20px;
+	box-sizing: border-box;
+	background:linear-gradient(to top, #e65a3f, #e79251);
+}
+.forth_page .fourth_top{
+	text-align: left;
+	font-size: 20px;
+	color: #fff;
+}
+.fourth_picture{
+	width: 340px;
+	height: 400px;
+	background: white;
+	margin-top: 30px;
+	text-align: left;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.fourth_teacher{
+	color: blue;
+	font-size: 16px;
+	text-align: left;
+	margin-bottom: 10px;
+}
+.fourth_bottom{
+	display: flex;
+	justify-content: space-around;
+}
+.fourth_bottom>div{
+	width: 150px;
+	height: 40px;
+	border-radius: 20px;
+	text-align: center;
+	line-height: 40px;
+	margin-top: 20px;
+	border: 1px solid #fff;
+}
+.fourth_bottom .left{
+	background: white;
+	color: #a1b7e3;
+}
+.fourth_bottom .right{
+	color: white;
+}
+.fifth_page{
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #e65a3f, #e79251);
+	position: relative;
+	overflow: hidden;
+}
+.fifth_page .fifth_picture{
+	width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url(../img/head.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70px;
+    margin: auto;
+}
+.fifth_page p{
+	margin-top: 150px;
+	font-size: 16px;
+	color: white;
+	margin-bottom: 20px;
+}
+.fifth_page .fifth_xingzhuang{
+	width: 200px;
+	height: 40px;
+	border-radius: 25px;
+	background: white;
+	margin: 0 auto 20px;
+	text-align: center;
+	line-height: 40px;
+}

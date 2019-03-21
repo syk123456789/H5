@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/fullpage.css">
+	<link rel="stylesheet" href="css/h5.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+	<script src="js/jquery3.1.js"></script>
+	<script src="js/fullpage.js"></script>
+	<script src="js/easings.min.js"></script>
+</head>
+<body>
+	<div id="fullpage">
+		<div class="section first_page">
+			<!-- <div class="circle animated bounce"></div> -->
+			<!-- <div class="circle animated infinite pulse"></div>
+			<p class=" animated infinite pulse">千里马伯乐公司</p>
+			<p class=" animated infinite pulse">我们寻找与众不同的你</p> -->
+			<div class="wrap animated pulse">
+				<div class="circle"></div>
+				<p class="top">千里马伯乐公司</p>
+				<p class="bottom">我们寻找与众不同的你</p>
+			</div>
+		</div>
+		<div class="section second_page">
+			<div class="floor ">
+				<div class="transi ">
+					<img  src="img/dibiao.png" alt="">
+					<p>榆次区</p>
+				</div>
+				<div class="transi ">
+					<img src="img/headman.png" alt="">
+					<p>20-99人</p>
+				</div>
+				<!-- animated   flipInY -->
+				<div class="transi ">
+					<img src="img/building.png" alt="">
+					<p>外商投资</p>
+				</div>
+			</div>
+			<div class="callme">
+				<p class="left animated1">·&nbsp;认识我们</p>
+				<p class="left2 animated" style="animation-delay:2s;">地区气温的去我的期望的打对方啊</p>
+			</div>
+		</div>
+		<div class="section third_page " ><img class="animated infinite  skew" src="img/tu3.png" alt=""></div>
+		<div class="section forth_page">
+			<div class="fourth_top">·&nbsp;我们招聘的职位</div>
+			<div class="fourth_picture animated infinite rotateInDownLeft">
+				<p class="fourth_teacher">导师</p>
+				<p><span>3</span>千<span>3</span>-<span>4</span>千<span>4</span>/月</p>
+				<p>经验不限、学历不限</p>
+				<div class="fourth_line"></div>
+				<p>工作地点：甘肃/张嘎/顺安苗族自治县</p>
+				<div><span>任职要求：</span><span>职位详情>></span></div>
+				<p>请带我去玩的起在确定</p>
+			</div>
+			<div class="fourth_bottom">
+				<div class="left animated fadeInUp" >投递简历</div>
+				<div class="right animated fadeInUp" >电话联系</div>
+			</div>
+		</div>
+		<div class="section fifth_page">
+			<div class="fifth_picture"></div>
+			<p>已有<span>1</span>人觉得这家公司值得加入</p>
+			<div class="fifth_xingzhuang"><i class="iconfont">&#xe623;</i>点赞，值得加入</div>
+			<div class="fifth_xingzhuang">分享给好友</div>
+			<div>查看更多职位>></div>
+		</div>
+	</div>
+	<footer class="animated infinite opacity1">
+	</footer>
+	<div class="array animated infinite fadeOutUp"></div>
+</body>
+<script>
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				continuousVertical: true,
+				verticalCentered:false,  //垂直不居中
+				afterLoad:function(anchorLink,index){
+					// console.log(index.index);
+					// console.log($('.transi'));
+					if(index.index==1){
+						$(".transi").addClass(' animated flipInX');
+						$(".transi").css('display','block');
+						$(".callme .left2").css('display','block');
+						$(".callme .left").css('display','block');
+						$(".callme .left").addClass('  fadeInRightBig');
+						$(".callme .left2").addClass('  fadeInRightBig');
+						// console.log(111)
+					}
+				},
+				onLeave:function(index){
+					// console.log(index);
+					if(index.index!=0){
+						$(".transi").removeClass('animated flipInX');
+						$(".transi").css('display','none');
+						$(".callme .left2").css('display','none');
+						$(".callme .left").css('display','none');
+						$(".callme .left2").removeClass('  fadeInRightBig');
+						$(".callme .left").removeClass(' fadeInRightBig');
+					}
+				}
+			});
+			
+		});
+</script>
+</html>
